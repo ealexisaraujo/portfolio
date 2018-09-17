@@ -6,61 +6,69 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Alexis Araujo</title>
   <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div>
-      <figure>
+      <figure class="logo">
         <img src="images/logo.png" alt="">
       </figure>
     </div>
-    <nav>
+    <nav class="menu">
       <ol>
         <li>
-          <a href="#portfolio">Portafolio</a>
+          <a class="links" href="#portfolio">Portafolio</a>
         </li>
         <li>
-          <a href="#experiencia">Experiencia</a>
+          <a class="link" href="#experiencia">Experiencia</a>
         </li>
         <li>
-          <a href="#contacto">Trabajemos juntos</a>
+          <a class="link" href="#contacto">Trabajemos juntos</a>
         </li>
       </ol>
     </nav>    
   </header>
-  <section><h1>Hola! Soy <strong>Alexis Araujo</strong> Desarrollador <br/><strong>Javascript</strong> con <br>pasion por la <strong>enseñanza</strong></h1></section>
+  <section class="hero">
+    <h1>Hola! Soy <strong>Alexis Araujo</strong> Desarrollador <br/><strong>Javascript</strong> con <br>pasion por la <strong>enseñanza</strong></h1>
+  </section>
   <img src="images/hero.jpg" width="500" height="300">
-  <section id="portfolio">
+  <section id="portfolio" class="portfolio">
     <article>
       <h2>Portafolio (Proyectos Destacados)</h2>
     </article>
-    <article>
-      <h3>Platzi Video</h3>
-      <h6>React Native / React</h6>
-      <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-      <p><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil necessitatibus nisi nemo quibusdam quam officia, consequuntur quo corporis impedit! Voluptatibus architecto quasi sed nemo earum aperiam ipsam fugit magnam veritatis.</p>
-      <img src="images/platzi-video-react-native.png" alt="Proyecto del curso de react native" width="500">
+    <article class="project">
+      <h3 class="project-title">Platzi Video</h3>
+      <h6 class="project-course">React Native / React</h6>
+      <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+      <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+      <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil necessitatibus nisi nemo quibusdam quam officia, consequuntur quo corporis impedit! Voluptatibus architecto quasi sed nemo earum aperiam ipsam fugit magnam veritatis.</p>
+      <figure class="project-imageContainer">
+          <img class="project-image" src="images/platzi-video-react-native.png" alt="Proyecto del curso de react native" width="500">
+      </figure>
     </article>
     <article>
     </article>
   </section>
   <section id="experiencia">
     <h2>Más sobre mi experiencia</h2>
-    <article>
-      <figure><img src="images/platzi-conf.jpg" width="500"></figure>
-      <h3>PlatziConf México 2018</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet illo pariatur recusandae explicabo aut libero, ipsam dolorem excepturi, omnis tenetur dolore est reprehenderit non iusto nulla et veniam accusamus deleniti.</p>
-      <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+    <article class="event">
+      <figure class="event-imageContainer">
+        <img class="event-image" src="images/platzi-conf.jpg" width="500">
+      </figure>
+      <h3 class="event-title">PlatziConf México 2018</h3>
+      <p class="event-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet illo pariatur recusandae explicabo aut libero, ipsam dolorem excepturi, omnis tenetur dolore est reprehenderit non iusto nulla et veniam accusamus deleniti.</p>
+      <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
     </article>
   </section>
-  <section id="contacto">
-    <form action="/suscripcion/">
+  <section id="contacto" class="contacto">
+    <form action="/suscripcion/" class="form-email">
       <h3>¿Creamos algo juntos?</h3>
       <input type="text" placeholder="Déjame tu email" id="email">
       <button>Enviar</button>
     </form>
   </section>
-  <footer>footer</footer>
+  <footer class="footer">footer</footer>
 </body>
 </html>
