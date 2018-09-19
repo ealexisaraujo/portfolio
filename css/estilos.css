@@ -48,6 +48,12 @@ h1 strong {
   background-color: #1b2127
 }
 
+.project {
+  border-color: #026fff;
+  border-width: 15px;
+  border-style: solid
+}
+
 .project-details {
   width: 500px;
 }
