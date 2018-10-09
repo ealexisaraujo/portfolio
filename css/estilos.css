@@ -284,9 +284,31 @@ margin-left: 20px;
   .container {
     padding: 0 1em;
   }
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    filter: opacity(80%) blur(1px);
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+    text-shadow: 1px 2px 2px #000;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  
   .header {
     display: block;
     height: auto;
@@ -344,6 +366,10 @@ margin-left: 20px;
 }
 
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+    text-shadow: 1px 2px 2px #000;
+  }
   .project-details{
     width: auto;
     font-size: 12px;
@@ -372,5 +398,10 @@ margin-left: 20px;
 }
 
 @media screen and (max-width: 320px) {
-  
+  h1{
+    font-size: 1.2em
+  }
+  .hero {
+    padding: 2em 1em;
+  }
 }
