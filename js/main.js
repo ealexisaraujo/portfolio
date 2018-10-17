@@ -28,4 +28,4 @@ function mediaQuery () {
     burgerButton.removeEventListener('click', toggleMenu)
   }
 }
-mediaQuery()
+mediaQuery(consulta)
