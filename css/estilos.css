@@ -140,6 +140,9 @@ h2:before {
 
 .hero-image {
   object-fit: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
 }
 
 .portfolio {
@@ -386,14 +389,18 @@ height: 100%;
     padding: 2em;
   }
   .hero-image {
+    
     position: absolute;
     z-index: 1;
-    left: 0;
-    right: 0;
+    left: 71%;
+    height: 200px;
+    width: 200px;
+    bottom: 0;
+    /* right: 0;
     top: 0;
     bottom: 0;
     width: 100%;
-    filter: opacity(80%) blur(1px);
+    filter: opacity(80%) blur(1px); */ 
   }
   h1 {
     font-size: 2em;
@@ -490,9 +497,18 @@ height: 100%;
   .event img {
     width: 100%;
   }
+
+  .hero-image {
+    left: 60%;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .hero-image {
+    left: 47%;
+    top: 1.0em;
+    filter: opacity(80%) blur(1px);
+  }
   .portfolio, .event-list {
     border-width: 5px;
   }
